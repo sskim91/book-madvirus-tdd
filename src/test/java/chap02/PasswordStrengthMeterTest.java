@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * @author sskim
  */
-public class PsswordStrengthMeterTest {
+public class PasswordStrengthMeterTest {
 
     private PasswordStrengthMeter meter = new PasswordStrengthMeter();
 

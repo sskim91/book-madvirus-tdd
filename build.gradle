@@ -7,8 +7,8 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = '11'
 targetCompatibility = '11'
-compileJava.options.encoding='UTF-8'
-compileTestJava.options.encoding='UTF-8'
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
 
 
 repositories {
@@ -20,11 +20,16 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testCompileOnly 'junit:junit:4.13'
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine'
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.19.0'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+
 }
 
 test {
-    useJUnitPlatform ()
-    testLogging{
+    useJUnitPlatform()
+    testLogging {
         events "passed", "skipped", "failed"
     }
 }
