@@ -4,5 +4,5 @@ package chap02;
  * @author sskim
  */
 public enum PasswordStrength {
-    INVALID, NORMAL, STRONG
+    INVALID, NORMAL, STRONG, WEAK
 }
